@@ -1,0 +1,89 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --yellow: #FFC107;
+  --yellow-dark: #E6A800;
+  --navy: #1B2A4A;
+  --dark: #1a1a2e;
+  --text: #333;
+  --muted: #666;
+  --light-bg: #F5F5FA;
+  --white: #fff;
+  --border: #e0e0e0;
+  --tag-bg: #f0f0f0;
+  --card-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text);
+  background: var(--white);
+}
+
+section {
+  padding: 64px 24px;
+}
+
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--dark);
+}
+
+.section-sub {
+  text-align: center;
+  color: var(--muted);
+  margin:0 auto;
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 700px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: none;
+  background: var(--light-bg);
+  border-radius: 6px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: 0 0 0 2px var(--yellow);
+}
+
+.form-group textarea {
+  height: 130px;
+  resize: vertical;
+}

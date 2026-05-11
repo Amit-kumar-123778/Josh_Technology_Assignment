@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rayan Adirdard – Front-end Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
+<link rel="stylesheet" href="../CSS Component/base.css"/>
+<link rel="stylesheet" href="../CSS Component/Navbar.css"/>
+<link rel="stylesheet" href="../CSS Component/Hero.css"/>
+<link rel="stylesheet" href="../CSS Component/Projects.css"/>
+<link rel="stylesheet" href="../CSS Component/Recommendations.css"/>
+<link rel="stylesheet" href="../CSS Component/Contact.css"/>
+<link rel="stylesheet" href="../CSS Component/Brands.css"/>
+<link rel="stylesheet" href="../CSS Component/Footer.css"/>
+<link rel="stylesheet" href="../CSS Component/Modal.css"/>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <svg viewBox="0 0 80 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="22" r="16" fill="#1a1a2e"/>
+        <circle cx="60" cy="22" r="16" fill="#1a1a2e"/>
+        <line x1="36" y1="22" x2="44" y2="22" stroke="#1a1a2e" stroke-width="3"/>
+        <circle cx="20" cy="22" r="10" fill="white"/>
+        <circle cx="60" cy="22" r="10" fill="white"/>
+        <circle cx="16" cy="18" r="4" fill="#1a1a2e"/>
+        <circle cx="56" cy="18" r="4" fill="#1a1a2e"/>
+      </svg>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#recommendations">Recommendations</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home">
+  <div class="shape s1"></div>
+  <div class="shape s2"></div>
+  <div class="shape s3"></div>
+  <div class="sq1"></div>
+  <div class="sq2"></div>
+  <div class="tri"></div>
+
+  <div class="hero-text">
+    <h1>I'm Amit Kumar <br><span>Front-end</span> Developer</h1>
+    <p>Welcome to our website. We provide high-quality services and innovative solutions to help businesses grow and succeed.</p>
+    <a href="#" class="btn-hire" id="hireMeBtn">HIRE ME &rarr;</a>
+  </div>
+
+  <div class="hero-image">
+    <svg viewBox="0 0 600 460" xmlns="http://www.w3.org/2000/svg">
+      <rect x="220" y="320" width="20" height="80" fill="#ccc" rx="4"/>
+      <rect x="180" y="395" width="100" height="12" fill="#bbb" rx="4"/>
+      <rect x="120" y="120" width="320" height="210" fill="#2c3e50" rx="12"/>
+      <rect x="130" y="130" width="300" height="190" fill="#1a1a2e" rx="8"/>
+      <text x="150" y="165" fill="#FFC107" font-family="monospace" font-size="18">&lt;/&mdash;&mdash;</text>
+      <text x="150" y="195" fill="#FFC107" font-family="monospace" font-size="14">&mdash;&mdash;&mdash;&mdash;&mdash;</text>
+      <text x="150" y="225" fill="#FFC107" font-family="monospace" font-size="14">&mdash;&mdash;&mdash;</text>
+      <text x="150" y="260" fill="#FFC107" font-family="monospace" font-size="18">&lt;/&mdash;&mdash;</text>
+      <rect x="140" y="335" width="280" height="16" fill="#ccc" rx="3"/>
+      <ellipse cx="320" cy="300" rx="40" ry="55" fill="#FFC107"/>
+      <circle cx="320" cy="210" r="35" fill="#e8b89a"/>
+      <ellipse cx="320" cy="192" rx="35" ry="18" fill="#1a1a2e"/>
+      <path d="M290 208 Q290 170 320 170 Q350 170 350 208" stroke="#1a1a2e" stroke-width="5" fill="none"/>
+      <rect x="282" y="206" width="12" height="18" rx="4" fill="#1a1a2e"/>
+      <rect x="346" y="206" width="12" height="18" rx="4" fill="#1a1a2e"/>
+      <path d="M360 290 Q420 240 450 200" stroke="#FFC107" stroke-width="22" stroke-linecap="round" fill="none"/>
+      <circle cx="452" cy="196" r="14" fill="#e8b89a"/>
+      <rect x="300" y="345" width="20" height="80" fill="#1a1a2e" rx="4"/>
+      <rect x="325" y="345" width="20" height="80" fill="#1a1a2e" rx="4"/>
+      <ellipse cx="310" cy="425" rx="18" ry="8" fill="#333"/>
+      <ellipse cx="335" cy="425" rx="18" ry="8" fill="#333"/>
+      <circle cx="310" cy="400" r="90" fill="#f0f0f0" opacity="0.25"/>
+    </svg>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-inner">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-sub">We are committed to delivering quality services with dedication and professionalism. Our team focuses on creating reliable solutions that meet customer needs and ensure satisfaction</p>
+    <div class="projects-grid" id="projectsGrid">
+    </div>
+  </div>
+</section>
+
+<section id="recommendations">
+  <div class="section-inner">
+    <h2 class="section-title">Recommendations</h2>
+    <p class="section-sub">We provide high-quality services with dedication and professionalism. Our goal is to deliver reliable solutions that help clients achieve the best results.</p>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper" id="recWrapper">
+        <!-- Slides injected by recommendations.js -->
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <a href="#" class="see-all-btn">See All</a>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="contact-form-section">
+        <h2>Leave ME Your Info</h2>
+        <div class="contact-form-card">
+          <div class="form-group">
+            <label>Your Full Name ( Required )</label>
+            <input type="text" placeholder=""/>
+          </div>
+          <div class="form-group">
+            <label>Your Email ( Required )</label>
+            <input type="email" placeholder=""/>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" placeholder=""/>
+          </div>
+          <div class="form-group form-group--grow">
+            <label>Your Message</label>
+            <textarea></textarea>
+          </div>
+          <button class="btn-send">SEND MESSAGE</button>
+        </div>
+      </div>
+
+      <div class="contact-info-section">
+        <h2>Contact Information</h2>
+        <div class="info-block">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <div class="info-row"><span>Country:</span><span>Bangladesh</span></div>
+          <div class="info-row"><span>City:</span><span>Dhaka</span></div>
+          <div class="info-row"><span>Streat:</span><span>35 Vhatara, Badda</span></div>
+        </div>
+        <div class="info-block">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <div class="info-row"><span>Email:</span><span>Youremail@Gmail.Com</span></div>
+          <div class="info-row"><span>Skype:</span><span>@Yourusername</span></div>
+          <div class="info-row"><span>Telegram:</span><span>@Yourusername</span></div>
+        </div>
+        <div class="info-block">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.02l-2.21 2.2z"/></svg>
+          </div>
+          <div class="info-row"><span>Support Services:</span><span>15369</span></div>
+          <div class="info-row"><span>Office:</span><span>+58 (021)356 587 235</span></div>
+          <div class="info-row"><span>Personal:</span><span>+58 (021)356 587 235</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="brands">
+  <div class="brands-inner">
+    <div class="brand-logo" style="font-style:italic;">3 eerrate</div>
+    <div class="brand-logo" style="color:#E6A800;">GL</div>
+    <div class="brand-logo" style="border:2px solid #1a1a2e; border-radius:50%; padding:4px 10px; font-size:22px;">B</div>
+    <div class="brand-logo" style="color:#E6A800;">3 Generate</div>
+  </div>
+</div>
+
+
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <svg viewBox="0 0 80 44" fill="none" width="70" height="40">
+          <circle cx="20" cy="22" r="16" fill="#1a1a2e"/>
+          <circle cx="60" cy="22" r="16" fill="#1a1a2e"/>
+          <line x1="36" y1="22" x2="44" y2="22" stroke="#1a1a2e" stroke-width="3"/>
+          <circle cx="20" cy="22" r="10" fill="white"/>
+          <circle cx="60" cy="22" r="10" fill="white"/>
+          <circle cx="16" cy="18" r="4" fill="#1a1a2e"/>
+          <circle cx="56" cy="18" r="4" fill="#1a1a2e"/>
+        </svg>
+        <div class="footer-ratings">
+          <div class="rating-badge">
+            <div class="rating-badge-img" style="background:#1B2A4A;">
+              <span style="font-size:10px;">■</span> Upwork
+            </div>
+            <span>4.5/5 Rating On Lorem</span>
+          </div>
+          <div class="rating-badge">
+            <div class="rating-badge-img" style="background:#1B2A4A;">
+              <span>n</span> Notion
+            </div>
+            <span>9/10 Rating On Ipsum</span>
+          </div>
+          <div class="rating-badge">
+            <div class="rating-badge-img" style="background:#2d2d2d;">
+              ▲ Forest Dubas
+            </div>
+            <span>4.5/5 Rating On Dorel</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Portfolio</h4>
+          <ul>
+            <li><a href="#">Frontend Development</a></li>
+            <li><a href="#">Backend Development</a></li>
+            <li><a href="#">Website Design</a></li>
+            <li><a href="#">Machine Learning</a></li>
+            <li><a href="#">Problem Solving &amp; DSA</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="connect-links">
+            <a href="#" class="connect-link linkedin">
+              <svg width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="#" class="connect-link instagram">
+              <svg width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              Instagram
+            </a>
+            <a href="#" class="connect-link facebook">
+              <svg width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              facebook
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><span style="font-size:16px;">©</span> 2024 Copyright, All Right Reserved</p>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalCloseBtn" aria-label="Close">&times;</button>
+    <h2 id="modalTitle">Hire Me</h2>
+    <div class="form-group">
+      <label>Your Full Name</label>
+      <input type="text" placeholder="Enter your name"/>
+    </div>
+    <div class="form-group">
+      <label>Your Email</label>
+      <input type="email" placeholder="Enter your email"/>
+    </div>
+    <div class="form-group">
+      <label>Project Description</label>
+      <textarea style="height:100px;" placeholder="Describe your project..."></textarea>
+    </div>
+    <div class="modal-actions">
+      <button class="btn-cancel" id="modalCancelBtn">Cancel</button>
+      <button class="btn-submit">Submit</button>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="../JavaScriptComponent/Data.js"></script>
+<script src="../JavaScriptComponent/Projects.js"></script>
+<script src="../JavaScriptComponent/Recommendations.js"></script>
+<script src="../JavaScriptComponent/Navbar.js"></script>
+<script src="../JavaScriptComponent/Modal.js"></script>
+</body>
+</html>
